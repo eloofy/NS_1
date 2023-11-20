@@ -157,6 +157,11 @@ class IntersectionAreaPlotter:
         plt.legend(handles=legend_lines)
         plt.xlabel("x1")
         plt.ylabel("x2")
+        plt.grid(which='both', linestyle='--', linewidth=0.5)
+        plt.xticks(np.arange(0, 10.1, 0.1))
+        plt.yticks(np.arange(0, 10.1, 0.1))
+        plt.xticks(rotation='vertical', fontsize=0)
+        plt.yticks(fontsize=0)
         plt.show()
 
     def calculate_percentage_area(self):
